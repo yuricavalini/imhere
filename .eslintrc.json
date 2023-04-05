@@ -31,7 +31,8 @@
     "import/prefer-default-export": "off",
     "react-hooks/rules-of-hooks": "error",
     "space-before-function-paren": "off",
-    "@typescript-eslint/space-before-function-paren": "off"
+    "@typescript-eslint/space-before-function-paren": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off"
   },
   "settings": {
     "react": {

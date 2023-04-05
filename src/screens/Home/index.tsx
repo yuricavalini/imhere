@@ -9,6 +9,10 @@ export function Home(): JSX.Element {
     console.log('Você clicou no botão de Adicionar!')
   }
 
+  function handleParticipantRemove(name: string): void {
+    console.log('teste')
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.eventName}>
@@ -33,9 +37,18 @@ export function Home(): JSX.Element {
         </TouchableOpacity>
       </View>
 
-      <Participant />
-      <Participant />
-      <Participant />
+      <Participant
+      name="Yuri 1"
+      onRemove={() => handleParticipantRemove('Yuri') }
+      />
+      <Participant
+      name="Yuri 2"
+      onRemove={() => handleParticipantRemove('Yuri 2') }
+      />
+      <Participant
+      name="Yuri 3"
+      onRemove={() => handleParticipantRemove('Yuri 3') }
+      />
     </View>
   )
 }
